@@ -1,0 +1,28 @@
+
+Código de inicio de sesión 
+Jaime_Proyecto/htdoc/php/inicio_sesion.php
+
+
+=========================================
+Pagina de inicio 
+Proyecto/Jaime_Proyecto/htdoc/index.php
+
+
+<?php if (!isset($_COOKIE["user"])):
+
+ header("Location: login.php");
+ ?>
+
+<?php else: ?>
+
+<?php endif; ?>
+
+<!-- if (!isset($_COOKIE["user"])) {
+   header("Location: login.php");
+} else {
+
+   echo $_COOKIE["user"];
+} -->
+=========================================
+
+http://localhost/Proyecto/Jaime_Proyecto/htdoc/index.php
