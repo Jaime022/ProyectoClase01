@@ -1,6 +1,6 @@
 <!--
 Condicional para detectar la galleta
-insertada en el navegador "Cooke"
+insertada en el navegador (Cookie)
 -->
 <?php if (!isset($_COOKIE["user"])):
    header("Location: page-login.php");?>
@@ -8,9 +8,7 @@ insertada en el navegador "Cooke"
 
 <!DOCTYPE html>
 <html lang="en">
-   <!--
-   Cabecera del documento incluye enlace a hojas externas y etiquetas meta entre otros
-   -->
+   <!-- Cabecera del documento incluye enlace a hojas externas y etiquetas meta entre otros -->
    <?php include_once "comp/head.php";?>
    <body>
       <!--  Componente previo a la carga total del; fichero actual  -->
@@ -33,26 +31,21 @@ insertada en el navegador "Cooke"
                </div>
             </div>
          </div>
-         <!--  Cabecera del documento  -->
 
+         <!--  Cabecera del documento  -->
          <?php include_once "comp/header.php";?>
 
-         <!--
-         Menú contiene solo la barra lateral y ademas enlaces de navegación
-         -->
+         <!-- Menú contiene solo la barra lateral y ademas enlaces de navegación -->
          <?php include_once "comp/menu.php";?>
 
          <div class="content-body">
-         <!--
-         Sección vacía es el inicio de la aplicación en si.
-         -->
+         <!-- Sección vacía es el inicio de la aplicación en si. -->
          </div>
          <!--  Pie de la pagina web o aplicación  -->
          <?php include_once "comp/footer.php";?>
       </div>
-      <!--
-      Contiene enlaces a ficheros externos de JavaScript
-      -->
+      
+      <!-- Contiene enlaces a ficheros externos de JavaScript -->
       <?php include_once "comp/javascript_pie.php";?>
    </body>
 </html>
